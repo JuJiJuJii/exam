@@ -1,0 +1,8 @@
+<% if @feed_items.any? %>
+  <ol class="microposts">
+    <% @feed_items.each do |feed_item| %>
+    	<%= render "shared/feed_item", feed_item: feed_item %>
+    <%end %>
+  </ol>
+  <%= will_paginate @feed_items %>
+<% end %>

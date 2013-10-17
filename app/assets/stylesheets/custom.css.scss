@@ -176,3 +176,68 @@ input {
   @extend .control-group;
   @extend .error;
 }
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
+}
+
+/* microposts */
+
+.microposts {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+.content {
+  display: block;
+}
+.timestamp {
+  color: $grayLight;
+}
+.gravatar {
+  float: left;
+  margin-right: 15px;
+}
+aside {
+  textarea {
+    height: 80px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+  }
+}
+
+/* comments */
+
+.custom-comment {
+  clear: both;
+  width: 100%;
+  float:left;
+  margin-bottom: 5px;
+}
+
+.custom-form {
+  width : 380px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.blog-comment {
+  float : left;
+  border-bottom: 1px solid gray;
+}
